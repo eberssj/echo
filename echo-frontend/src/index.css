@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'LexendDeca';
+    src: url('../public/assets/fonts/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'LexendDeca', sans-serif;
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .pages {
+    margin: 0 120px;
+  }

@@ -1,0 +1,65 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+}
+
+.about-page-title .about-echo {
+  color: #3d9f44;
+}
+
+.about-content {
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-howitworks-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.about-image img {
+  width: 380px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,134 @@
+.container.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #3d9f44;
+  text-align: center;
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input[type="password"] {
+  font-family: monospace;
+}
+
+.send-code-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.send-code-button-container {
+  text-align: right;
+}
+
+.send-email-button {
+  background-color: #3d9f44;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-email-button:hover {
+  background-color: #358e3c;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  align-items: center;
+  background-color: #3d9f44;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button-spacing {
+  width: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.mode-green {
+  background-color: #3d9f44;
+  color: white;
+}
+
+button.mode-green:hover {
+  background-color: #358e3c;
+}
+
+button.mode-red {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.mode-red:hover {
+  background-color: #c0392b;
+}

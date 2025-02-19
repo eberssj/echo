@@ -1,0 +1,300 @@
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 0;
+  text-align: left;
+  font-family: LexendDeca, sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.calendar-header button img {
+  width: 10px;
+  height: 15px;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.calendar-weekday {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3D9F44;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative; 
+}
+
+.calendar-day:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.calendar-day.today {
+  background-color: #b7ecbb;
+  font-weight: bold;
+}
+
+.calendar-day.today:hover {
+  cursor: pointer;
+  background-color: #9fcfa2;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+
+
+.input-value {
+  width: 90%;
+  padding:12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #3D9F44;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-value:focus {
+  border-color: #b7ecbb;
+}
+
+.tag.income {
+  background-color: #3D9F44; 
+}
+
+.tag.expense {
+  background-color: #DF2F2F; 
+}
+
+.tags {
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+
+.tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px; 
+}
+
+
+.tag-options {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 50px; 
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  max-height: 80vh; 
+  overflow-y: auto; 
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-modal-button:hover {
+  color: #333;
+}
+
+.tag-selection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tag-selection label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem; 
+}
+
+.tag-selection label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.tag-selection label[for="income"] {
+  color: #3D9F44; 
+}
+
+.tag-selection label[for="expense"] {
+  color: #DF2F2F; 
+}
+
+.tag-item {
+  padding: 8px; 
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tag-item.selected {
+  background-color: #b7ecbb;
+}
+
+.tag-item:hover {
+  background-color: #ddd;
+}
+
+.no-tags-message {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem; 
+}
+
+.tag-viewer h3 {
+  color: #3D9F44;
+  margin-bottom: 10px;
+}
+
+.tag-viewer-toggle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  cursor: pointer;
+}
+
+.tag-viewer-toggle span:first-child {
+  flex-grow: 0; 
+  font-size: 1.2rem;
+}
+
+.tag-viewer-toggle span:last-child {
+  flex-shrink: 0;
+  width: 20px; 
+  height: 20px;
+  position: relative;
+}
+
+.tag-viewer-toggle span:last-child::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #3D9F44;
+  border-bottom: 3px solid #3D9F44;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -6px;
+  transition: transform 0.3s ease;
+}
+
+.tag-viewer-toggle.open span:last-child::before {
+  transform: rotate(-135deg); 
+}
+
+.tag-viewer {
+  width: 320px; 
+  height: 0; 
+  overflow: hidden;
+  transition: height 0.3s ease; 
+}
+
+.tag-viewer.open {
+  height: auto; 
+}
+
+.tag-viewer input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.tag-viewer button,
+.save-button {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-family: 'Lexend Deca', sans-serif; 
+  background-color: #3D9F44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.tag-viewer button:hover,
+.save-button:hover {
+  background-color: #2e7d32;
+}
+
+.save-button:disabled {
+  background-color: #A5D6A7;
+  cursor: not-allowed;
+}

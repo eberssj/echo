@@ -1,0 +1,60 @@
+.tag-list {
+    padding: 20px;
+    background-color: #f4fff2;
+    border-radius: 5px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tag-list h3 {
+    margin-bottom: 10px;
+    color: #3D9F44;
+  }
+  
+  .tag-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tag-list li {
+    margin: 5px 0;
+  }
+  
+  .tag-list .income {
+    color: #3D9F44;
+  }
+  
+  .tag-list .expense {
+    color: #DF2F2F;
+  }
+  
+  .custom-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-bottom: 5px;
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    background-color: black; 
+    border-radius: 50%; 
+    display: inline-block;
+  }
+
+  .summary-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  

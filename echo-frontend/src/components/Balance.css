@@ -1,0 +1,24 @@
+.balance-container {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+  }
+  
+  .balance-total {
+    background-color: #3D9F44; 
+    padding: 12px; 
+    border-radius: 16px; 
+    color: white; 
+    text-align: center; 
+    font-size: 1.5rem; 
+    width: 150px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+  }
+  
+  .month-total {
+    font-size: 1rem; 
+    color: #333; 
+  }

@@ -1,0 +1,62 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .auth-input {
+    width: 320px;
+    padding: 10px;
+    border: 2px solid #3D9F44;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #3D9F44;
+    color: white;
+  }
+  
+ .password-container {
+  position: relative;
+  width: 320px; 
+}
+
+
+.auth-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #226827;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 55%;
+  right: 0px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); 
+}
+
+.error-message {
+  color: #DF2F2F; 
+  font-size: 14px; 
+  text-align: left; 
+  margin: 0; 
+}
+
+.error-message-container {
+  height: 20px; 
+  visibility: visible; 
+ 
+}
+
+.error-message-container:empty {
+  visibility: hidden; 
+}
